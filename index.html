@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Afdal Sport</h1>
+        </div>
+        <ul class="menu">
+            <li><a href="" class="active">Home</a></li>
+            <li><a href="">New Arrivals</a></li>
+            <li><a href="">Fashion</a></li>
+            <li><a href="">Account</a></li>
+            <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+
+        <!--for responsive button-->
+        <div class="menu-btn">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+
+    <section class="content">
+        <h1>Afdal Sport</h1>
+        <p>Afdal Sports menyediakan berbagai
+            <br>jenis perlengkapan & peralatan olahraga
+        </p>
+        <button>Beli sekarang</button>
+    </section>
+
+    <h1 class="pheading">Produk Pilihan</h1>
+
+    <section class="sec">
+        <div class="products">
+
+            <!--card start-->
+            <div class="card">
+                <div class="img"><img src="gam/ra.jpeg" alt=""></div>
+                <div class="desc">Perlengkapan Olahraga</div>
+                <div class="title">Raket</div>
+                <div class="box">
+                    <div class="price">Rp 130.000</div>
+                    <button class="btn">Beli</button>
+                </div>
+            </div>
+            <!--card end-->
+
+            <!--card start-->
+            <div class="card">
+                <div class="img"><img src="gam/ket.jpg" alt=""></div>
+                <div class="desc">Perlengkapan Olahraga</div>
+                <div class="title">Kock</div>
+                <div class="box">
+                    <div class="price">Rp 100.000</div>
+                    <button class="btn">Beli</button>
+                </div>
+            </div>
+            <!--card end-->
+
+            <!--card start-->
+            <div class="card">
+                <div class="img"><img src="gam/baju b.jpg" alt=""></div>
+                <div class="desc">Baju Olahraga</div>
+                <div class="title">Jersey Basket</div>
+                <div class="box">
+                    <div class="price">Rp 180.000</div>
+                    <button class="btn">Beli</button>
+                </div>
+            </div>
+            <!--card end-->
+
+            <!--card start-->
+            <div class="card">
+                <div class="img"><img src="gam/bola sepak.jpg" alt=""></div>
+                <div class="desc">Perlengkapan Olahraga</div>
+                <div class="title">Bola</div>
+                <div class="box">
+                    <div class="price">Rp 170.000</div>
+                    <button class="btn">Beli</button>
+                </div>
+            </div>
+            <!--card end-->
+
+            <!--card start-->
+            <div class="card">
+                <div class="img"><img src="gam/sepatru.jpg" alt=""></div>
+                <div class="desc">Sepatu</div>
+                <div class="title">Sepatu Lari</div>
+                <div class="box">
+                    <div class="price">Rp 380.000</div>
+                    <button class="btn">Beli</button>
+                </div>
+            </div>
+            <!--card end-->
+
+            <!--card start-->
+            <div class="card">
+                <div class="img"><img src="gam/se.jpg" alt=""></div>
+                <div class="desc">Sepatu</div>
+                <div class="title">Sepatu Futssal</div>
+                <div class="box">
+                    <div class="price">Rp 650.000</div>
+                    <button class="btn">Beli</button>
+                </div>
+            </div>
+            <!--card end-->
+
+            <!--card start-->
+            <div class="card">
+                <div class="img"><img src="gam/bet.jpg" alt=""></div>
+                <div class="desc">Perlengkapan Olahraga</div>
+                <div class="title">Bet Pingpong</div>
+                <div class="box">
+                    <div class="price">Rp 150.000</div>
+                    <button class="btn">Beli</button>
+                </div>
+            </div>
+            <!--card end-->
+
+            <!--card start-->
+            <div class="card">
+                <div class="img"><img src="gam/basket b.jpg" alt=""></div>
+                <div class="desc">Perlengkapan Olahraga</div>
+                <div class="title">Bola Basket</div>
+                <div class="box">
+                    <div class="price">Rp 600.000</div>
+                    <button class="btn">Beli</button>
+                </div>
+            </div>
+
+            <!--card start-->
+            <div class="card">
+                <div class="img"><img src="gam/v.jpg" alt=""></div>
+                <div class="desc">Perlengkapan Olahraga</div>
+                <div class="title">Bola Voli</div>
+                <div class="box">
+                    <div class="price">Rp 800.000</div>
+                    <button class="btn">Beli</button>
+                </div>
+            </div>
+            <!--card end-->
+
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyrights at <a href="">Afdal Sport</a></p>
+    </footer>
+
+    <!--jquery-->
+
+    <script>
+        $(".menu-btn").click(function() {
+            $(".navbar .menu").toggleClass("active");
+            $(".menu-btn i").toggleClass("active");
+        });
+    </script>
+
+</body>
+
+</html>
